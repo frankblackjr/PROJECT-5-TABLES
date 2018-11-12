@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tables</title>
+  <style media="screen">
+    table,
+    th,
+    td {
+      border: 2px black solid;
+
+    }
+
+    table {
+      width: 300px;
+    }
+
+    th {
+      padding-right: 10px;
+    }
+
+    table#t1 {
+      border: 2px white solid;
+      border-collapse: seperate;
+      border-spacing: 1px;
+    }
+    table#a tr:nth-child(even) {
+      background-color: #eee;
+    }
+    table#a tr:nth-child(odd) {
+      background-color: #ddd;
+    }
+    table#a th {
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Things that are irritating</caption>
+    <tr>
+      <th>It's</th>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+    </tr>
+    <tr>
+      <th>Really It's</th>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <caption>Will I be embarrassed of these projects one day?</caption>
+    <tr>
+      <th>Yes</th>
+      <th>No</th>
+      <th>Maybe</th>
+    </tr>
+    <tr>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+  </table>
+  <br>
+  <table id="t1">
+    <caption>border spacing example</caption>
+    <tr>
+      <th colspan="3">space</th>
+    </tr>
+    <tr>
+      <td>More</td>
+      <td>Space</td>
+      <td>Please</td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <caption>Things that are irritating</caption>
+    <tr>
+      <th rowspan="2">It's</th>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+    </tr>
+    <tr>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+      <td>Sand</td>
+    </tr>
+  </table>
+  <br>
+  <table id="a">
+    <caption>Pretty colors</caption>
+    <tr>
+      <th>Stuff</th>
+      <th>n</th>
+      <th>Thangs</th>
+    </tr>
+    <tr>
+      <td>Cooral</td>
+      <td>Dad</td>
+      <td>Dad</td>
+    </tr>
+    <tr>
+      <td>Cooral</td>
+      <td>Dad</td>
+      <td>Dad</td>
+    </tr>
+    <tr>
+      <td>Cooral</td>
+      <td>Dad</td>
+      <td>Dad</td>
+    </tr>
+  </table>
+</body>
+
+</html>
